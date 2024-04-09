@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Sustaining DH | MITH (April 9, 2024)</title>
+        <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./css/presentation.css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section class="title-slide slide">
+                    <h2 class="maintitle">Sustaining DH</h2>
+                    <p>Endings, Dependencies, Infrastructure</p>
+                    <hr />
+                    <footer class="r-fit-text">
+                        <p>Joey Takeda | Digital Humanities Innovation Lab | Simon Fraser
+                            University</p>
+                        <p>Digital Dialogues | Maryland Institute for Technology in the Humanities |
+                            April 09, 2024</p>
+                    </footer>
+                </section>
+
+
+                <section data-background-image="img/native-land.png">
+                    <div>
+                        <p>Unceded territory of the səl̓ilw̓ətaʔɬ (Tsleil-Waututh), kʷikʷəƛ̓əm
+                            (Kwikwetlem), Sḵwx̱wú7mesh Úxwumixw (Squamish), and xʷməθkʷəy̓əm
+                            (Musqueam) Nations</p>
+                        <p>https://native-land.ca</p>
+                    </div>
+                </section>
+                <section data-background-image="img/piscataway.png">
+                    <div>
+                        <p>Ancestral territories of the Piscataway People.</p>
+                        <p>https://native-land.ca</p>
+                    </div>
+                </section>
+
+                <section data-background-image="img/DHIL-Logo-Cat-2400.png" data-background-size="contain"></section>
+              
+
+                <section data-background-image="img/endings-website.png">
+                    <!--Endings Website image-->
+                </section>
+
+                
+
+                <section data-background-image="img/earhart.jpg" data-background-size="contain"> 
+                    <!--Earhart intro-->
+                </section>
+
+                <section data-state="blur" data-background-image="img/earhart.jpg"
+                data-background-size="contain">
+                <div class="r-fit-text">
+                    <blockquote>
+                        <p><span class="fragment fade-in">Digital humanists are fond of talking
+                                about sustainability as a problem for current and future
+                                works</span><span class="fragment fade-in">, but it is clear
+                                that we already have sustained a good deal of loss within the
+                                broadly defined digital humanities canon</span></p>
+                    </blockquote>
+                    <cite>Amy E. Earhart, <i>Traces of the Old, Uses of the New: The Emergence
+                            of Digital Literary Studies</i> (University of Michigan Press, 2015),
+                        p. 80, <a href="https://doi.org/10.1353/book.43167">https://doi.org/10.1353/book.43167</a>.</cite>
+                </div>
+            </section>
+
+            <section>
+                <h3><i>sustain</i></h3>
+                <ul class="fragmented">
+                    <li>1. "To support, maintain, uphold" (I.1.a)</li>
+                    <li>2. "To endure (something painful, difficult, or unpleasant) without
+                        failing or giving way; to bear, withstand" (II.11.a)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>The Endings Project</h3>
+                <ul class="fragmented r-fit-text">
+                    <li>Collaborative research initiative from the University of Victoria</li>
+                    <li>Faculty PIs (Claire Carlin, Janelle Jenstad, Ewa Czaykowska-Higgins, Elizabeth Grove-White); Librarians (John Durno, Lisa Goddard, Matt Huculak); and Developers (Martin Holmes, Stewart Arneil, Greg Newton)</li>
+                </ul>
+            </section>
+
+
+                <section>
+                    <h3>Static Websites</h3>
+                    <ul>
+                        <li class="fragment">No on-the-fly server side processing</li>
+                        <li class="fragment">HTML + CSS + JS</li>
+                    </ul>
+                </section>
+
+                <section data-background-image="img/static-site.png" data-background-size="contain">
+                </section>
+
+                <section>
+                    <h3>But Why?</h3>
+                    <ul>
+                        <li class="fragment">No server-side interaction; less vulnerable</li>
+                        <li class="fragment">HTML + JS + CSS are standards</li>
+                        <li class="fragment">We can feel confident that they will persist</li>
+                        <li class="fragment">Portable (can be run on any server)</li>
+                    </ul>
+                </section>
+
+                <section data-background-color="white"
+                    data-background-iframe="http://info.cern.ch/hypertext/WWW/TheProject.html">
+                    <div class="fragment fade-out">
+                        <p>CERN: The First Website (it still works!)</p>
+                        <p><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a></p>
+                    </div>
+                </section>
+
+                <section data-background-iframe="https://www.spacejam.com/1996/jam.htm">
+                    <div class="fragment fade-out">
+                        <p>Space Jam (1996)</p>
+                        <p>https://www.spacejam.com/1996/jam.htm</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>The Endings Projects</h3>
+                    <ul>
+                        <li>The Robert Graves Diary Project</li>
+                        <li>The Map of Early Modern London</li>
+                        <li>Le Mariage Sous L'Ancien Régime</li>
+                        <li>The Nxa’amxcin Database and Dictionary</li>
+                    </ul>
+                </section>
+
+                <section data-background-image="img/spacejam-wbm-1997.png"
+                    data-background-size="contain">
+                    <div class="fragment fade-out">
+                        <p>Space Jam (1997) [Internet Archive]</p>
+                        <p>✅</p>
+                    </div>
+                </section>
+
+                <section data-background-image="img/spacejam-wbm-1997-error.png"
+                    data-background-size="contain"> </section>
+
+                <section data-background-image="img/spacejam-wbm-1997-error-highlight.png"
+                    data-background-size="contain"> </section>
+
+                <section data-background-image="img/spacejam-wbm-2000.png"
+                    data-background-size="contain">
+                    <div class="fragment fade-out">
+                        <p>Space Jam (2000) [Internet Archive]</p>
+                        <p>🎉</p>
+                    </div>
+                </section>
+
+                <section data-background-image="img/spacejam-wbm-2000-highlight.png"
+                    data-background-size="contain"></section>
+
+
+                <section>
+                <h3>The Endings Principles</h3>
+                  <ul class="fragmented">
+                        <li>Data</li>
+                        <li>Documentation</li>
+                        <li>Processing</li>
+                        <li>Products</li>
+                        <li>Release Management</li>
+                    </ul>
+                    <p>
+                        <cite><a href="https://endings.uvic.ca/principles.html">https://endings.uvic.ca/principles.html</a></cite>
+                    </p>
+                  
+                </section>
+
+                <section>
+                    <h3>Endings Compliance</h3>
+                    <ul class="fragmented r-fit-text">
+                        <li>All code (XML, CSS, HTML, etc.) has been thoroughly validated.</li>
+                        <li>All internal links have been tested and targets confirmed to exist.</li>
+                        <li>All internal links are relative, so the site can be hosted
+                            anywhere.</li>
+                        <li>No server-side scripting (PHP, JSP, Python etc.) support is
+                            required.</li>
+                        <li>No backend database software is required.</li>
+                        <li>Every page on the site carries the same clear edition and date
+                            information, so that it can be cited effectively.</li>
+                        <li>There are no external dependencies; or if there are, then they are
+                            peripheral to the main functionality, and when they fail, the results
+                            will not be significant.</li>
+                    </ul>
+                    <cite><a href="https://endings.uvic.ca/compliance.html">https://endings.uvic.ca/compliance.html</a></cite>
+                </section>
+
+                <section data-background-image="img/spacejam2024.png" data-background-size="contain">
+                    <div class="fragment fade-out">
+                        <p>Space Jam (2024) [Internet Archive]</p>
+                        <p>😔</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>External Dependencies</h3>
+                    <ul class="fragmented r-fit-text">
+                        <li class="fragment">Resources that promise to stay around and/or continue
+                            working</li>
+                        <li class="fragment">Digital dependencies are liable to disappear, break
+                            down, change their terms, et cetera</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p><img src="img/dependency.png"></img></p>
+                    <cite><a href="https://xkcd.com/2347">https://xkcd.com/2347</a></cite>
+                </section>
+                
+                <section>
+                    <h3>Google Maps</h3>
+                    <img src="img/google_maps.png" />
+                </section>
+
+                <section>
+                    <h3>Some dependencies are unavoidable</h3>
+                    <ul>
+                        <li class="fragment">Complex functionality (mapping, cryptography, image
+                            viewing)</li>
+                        <li class="fragment">Established standards, functionality, or user
+                            expectation</li>
+                        <li class="fragment">On others</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="r-fit-text">
+                        <blockquote><p>Even the simplest applications must attach to complex chains of interdependent software packages, which cut across multiple lines of ownership, origin, and organization authority, an unruly conglomeration that tends to invite misunderstanding and subtly mistaken assumptions</p></blockquote>
+                    </div>
+                    <cite>Stephanie Dick and Daniel Volmar, "DLL Hell: Software Dependencies, Failure, and the Maintenance of Microsoft Windows," <i>IEEE Annals of the History of Computing</i>, 40, no. 4 (2018): 29, <a href="https://doi.org/10.1109/MAHC.2018.2877913">10.1109/MAHC.2018.2877913</a></cite>
+                </section>
+
+        
+                <section data-background-image="img/sarte.jpeg" data-background-size="contain">
+                        <h3 class="r-fit-text fragment" style="color:black; background-color:rgba(255,255,255,0.7); ">Hell is other servers</h3>
+                        <p class="fragment"
+                         style="color:black; background-color:rgba(255,255,255,0.7);">"if you're lucky" (Berlant)</p>
+                </section>
+
+                <section>
+                    <h3>Flanders on collaboration: the long-tail of projects</h3>
+                </section>
+
+                <section data-background-image="img/dhq.png">
+                    <div>
+                        <p>Special issue of <i>Digital Humanities Quarterly</i> (17.1 [2023])</p>
+                        <p><a href="http://digitalhumanities.org/dhq/vol/17/1/index.html"
+                                >http://digitalhumanities.org/dhq/vol/17/1/index.html</a></p>
+                    </div>
+                </section>
+
+                <section data-background-image="img/dhq.png" data-state="blur">
+                    <div class="r-fit-text">
+                        <div class="r-stack">
+                            <blockquote class="fragment fade-out" data-fragment-index="0">There is value in thinking […] about the stories and relationships we are making along with the websites, digital archives, databases, tools, marked-up texts, maps, and innumerable other digital artifacts that arise from large-scale collaborations in this field</blockquote>
+                            <blockquote class="fragment current-visible" data-fragment-index="1">We need to think beyond institutional repositories and mirror sites to consider the lived experience of project making and the structure of the stories we tell about digital work</blockquote>
+                        </div>
+                    <cite>Claire Battershill, "The Stories We Tell: Project Narratives, Project Endings, and the Affective Value of Collaboration," <i>Digital Humanities Quarterly</i> 17, no. 1 (2023): para. 3, <a href="https://www.digitalhumanities.org/dhq/vol/17/1/000665/000665.html">https://www.digitalhumanities.org/dhq/vol/17/1/000665/000665.html</a></cite></div>
+                </section>
+
+                <section>
+                    <section>Case Study: LOI</section>
+                    <section data-background-image="img/protest-letter-page.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/protest_letter_001.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/casefile-page.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/casefile-1.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/casefile-2.png" data-background-size="contain">
+                    </section>
+    
+
+                </section>
+               
+                <section>
+                    <section>Case Study: WEA</section>
+                    <section data-background-image="img/wea.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/etext-homepage.png" data-background-size="contain">
+                    </section>
+    
+                    <section data-background-image="img/etext-error.png" data-background-size="contain">
+                    </section>
+                </section>
+
+                <section data-transition="fade-in">
+                    <div class="r-fit-text">
+                        <blockquote>
+                            <p>to think with computers is to think about social relations</p>
+                        </blockquote>
+                        <cite>Janet Abbate and Stephanie Dick, "Introduction," in <i>Abstractions and Embodiments: New Histories of Computing and Society</i>, ed. Janet Abbate and Stephanie Dick (Johns Hopkins University Press, 2022), 3.</cite>
+                    </div>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class="fragment">Who uses it?</li>
+                        <li class="fragment">Who builds it?</li>
+                        <li class="fragment">Who maintains it?</li>
+                        <li class="fragment">Who archives it?</li>
+                        <li class="fragment">Who benefits?</li>
+                        <li class="fragment">Who doesn't?</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class="fragment">Who sustains it?</li>
+                        <li class="fragment">Who sustains it?</li>
+                        <li class="fragment">Who is sustained by it?</li>
+                    </ul>
+                </section>
+
+                <section data-background-image="img/thatsallfolks.png" background-size="contain">
+
+                </section>
+
+                <section>
+                    <h3>Questions?</h3>
+                    <p>Contact: takeda@sfu.ca</p>
+                    <cite>Acknowledgements: Thanks to the Endings Team; SSHRC; SFU DHIL and Library</cite>
+                </section>
+
+                
+                <section>
+                    <section><h3>Appendix: The Endings Principles</h3></section>
+                    <section data-transition="fade">
+                        <h3>Data</h3>
+                        <ul class="r-fit-text">
+                            <li data-n="1.1"><div>Data is stored only in formats that conform to open
+                                    standards and that are amenable to processing (TEI XML, GML, ODF,
+                                    TXT).</div></li>
+                            <li data-n="1.2"><div>Data is subject to version control (Subversion,
+                                    Git).</div></li>
+                            <li data-n="1.3"><div>Data is continually subject to validation and
+                                    diagnostic analysis.</div></li>
+                        </ul>
+                    </section>
+                    <section data-transition="fade">
+                        <h3>Documentation</h3>
+                        <ul class="r-fit-text">
+                            <li data-n="2.1"><div>Data models, including field names, descriptions, and
+                                    controlled values, should be clearly documented in a static document
+                                    that is maintained with the data and forms part of the
+                                    products.</div></li>
+                            <li data-n="2.2"><div>All rights and intellectual property issues should be
+                                    clearly documented. Where possible the Data and Products should be
+                                    released under open licenses (Creative Commons, GNU, BSD,
+                                    MPL).</div></li>
+                        </ul>
+                    </section>
+                    <section data-transition="fade">
+                        <h3>Processing</h3>
+                        <ul class="r-fit-text">
+                            <li data-n="3.1"><div>Relentless validation: all processing includes
+                                    validation/linting of all inputs and outputs and all validation
+                                    errors should exit the process and prevent further execution until
+                                    the errors are resolved.</div></li>
+                            <li data-n="3.2"><div>Continuous integration: any change to the source data
+                                    requires an entire rebuild of the site (triggered automatically
+                                    where possible). </div></li>
+                            <li data-n="3.3"><div>Code is contingent: while code is not expected to have
+                                    significant longevity, wherever possible, all code should follow
+                                    Endings principles for data and products.</div></li>
+                        </ul>
+                    </section>
+                    <section data-transition="fade">
+                        <h3>Products</h3>
+                        <ul class="r-fit-text">
+                            <li data-n="4.1"><div>No dependence on server-side software: build a static
+                                    website with no databases, no PHP, no Python.</div></li>
+                            <li data-n="4.2"><div>No boutique or fashionable technologies: use only
+                                    standards with support across all platforms, whose long-term
+                                    viability is assured. Our choices are HTML5, JavaScript, and
+                                    CSS.</div></li>
+                            <li data-n="4.3"><div>No dependence on external libraries or services: no
+                                    JQuery, no AngularJS, no Bootstrap, no Google Search.</div></li>
+                            <li data-n="4.4"><div>No query strings: every entity in the site has a
+                                    unique page with a simple URL that will function on any domain or IP
+                                    address.</div></li>
+                            <li data-n="4.5"><div>Inclusion of data: every site should include a
+                                    documented copy of the source data, so that users of the site can
+                                    repurpose the work easily.</div></li>
+                            <li data-n="4.6"><div>Massive redundancy: every page contains all the
+                                    components it needs, so that it will function without the rest of
+                                    the site if necessary, even though doing so means duplicating
+                                    information across the site.</div></li>
+                            <li data-n="4.7"><div>Graceful failure: every page should still function
+                                    effectively even in the absence of JavaScript or CSS
+                                support.</div></li>
+                        </ul>
+                    </section>
+                    <section data-transition="fade">
+                        <h3>Products<sup>*</sup></h3>
+                        <ul class="r-fit-text">
+                            <li data-n="4.8"><div>Once a fully-working static site is achieved, it may
+                                    be enhanced by the use of other services such as a server-side
+                                    indexing tool (Solr, eXist) to support searching and similar
+                                    functionality.</div></li>
+                            <li data-n="4.9"><div>The use of an external library may be necessary to
+                                    support a specific function that is too complex to be coded locally
+                                    (such as mapping or cryptography). Any such libraries must be
+                                    open-source and widely-used, and must not themselves have
+                                    dependencies.</div></li>
+                        </ul>
+                    </section>
+                    <section data-transition="fade">
+                        <h3>Release Management</h3>
+                        <ul class="r-fit-text">
+                            <li data-n="5.1"><div>Releases should be periodical and carefully planned.
+                                    The “rolling release” model should be avoided. </div></li>
+                            <li data-n="5.2"><div>A release should only be made when the entire product
+                                    set is coherent, consistent, and complete (passing all validation
+                                    and diagnostic tests). </div></li>
+                            <li data-n="5.3"><div>Like editions of print works, each release of a web
+                                    resource should be clearly identified on every page by its build
+                                    date and some kind of version number. </div></li>
+                            <li data-n="5.4"><div>Web resources should include detailed instructions for
+                                    citation, so that end-users can unambiguously cite a specific page
+                                    from a specific edition.</div></li>
+                            <li data-n="5.5"><div>URLs for individual resources within a digital
+                                    publication should persist across editions. Any moved, retired, or
+                                    deleted resources no longer available at a previously accessible URL
+                                    should be redirected appropriately.</div></li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+
+
+                <!-- <section>
+                    <h3>Challenges for Ending</h3>
+                    <ul class="fragmented">
+                        <li>Determining end points</li>
+                        <li>What constitutes a "website"? What is a page?</li>
+                        <li>Reliance on databses / servers / external dependencies</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>The Goal</h3>
+                    <ul>
+                        <li>The websites should look and function exactly as they did before</li>
+                        <li>The websites should be completely portable and amenable to archiving</li>
+                        <li>The websites should be (verifiably) coherent, consistent, and complete </li>
+                    </ul>
+                </section> -->
+
+               <!--  <section>
+                    <h3>Minimal Computing</h3>
+                    <ul>
+                        <li class="fragment">Not tied to a particular methodology or technology</li>
+                        <li class="fragment">Sustainability</li>
+                        <li class="fragment">Usability</li>
+                        <li class="fragment">Maintainability</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class="fragment">What do we need? (Risam & Gil)</li>
+                        <li class="fragment">What <em>don't</em> we need? (Sayers)</li>
+                        <li class="fragment">What can be preserved, and on whom can we depend? (Endings)</li>
+                    </ul>
+                </section>
+ -->
+                
+                <!--Section on MinComp-->
+               <!--  <section class="animated">
+                    <p>Minimal Computing<span data-id="ne" style="font-size:1px; opacity:0;"><span
+                                class="codelike">!=</span> Minimal<i>ist</i> Computing</span></p>
+                </section>
+
+                <section data-background-image="img/kondo.png" class="animated">
+                    <p>Minimal Computing<span data-id="ne" class="visible"><span class="codelike"
+                                >!=</span> Minimal<i>ist</i> Computing</span></p>
+                </section> -->
+
+               <!--  <section data-background-image="img/gil-bg.png" data-background-position="top"> </section> -->
+
+
+             <!--    <section>
+                    <div style="margin-bottom:20px;">Jentery Sayers, "<a
+                            href="http://go-dh.github.io/mincomp/thoughts/2016/10/03/tldr/">Minimal
+                            Definitions: tl;dr</a>"</div>
+                    <div class="big-list">
+                        <p>
+                            <span class="heading">Minimal Design</span>
+                            <span class="content">Reduce the need to update/modify the structure or
+                                layout of a project in order to focus on content production and to
+                                increase the likelihood of project persistence</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimalist Design</span>
+                            <span class="content">Reduce the use of features to highlight a
+                                project's fundamental components across platforms/devices</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal WYSIWYG</span>
+                            <span class="content">Reduce the use of What You See Is What You Get
+                                (WYSIWYG) interfaces to decrease resource demands, increase
+                                awareness of programming and markup processes, and also increase
+                                individual focus on writing</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Dependencies</span>
+                            <span class="content">Reduce reliance on scripts, databases, libraries,
+                                versions, and software to decrease resource demands and processing
+                                time</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Maintenance</span>
+                            <span class="content">Reduce dependencies and the use of features to
+                                decrease the labor of updating, moderating, and stewarding a project
+                                over time</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Ephemerality</span>
+                            <span class="content">Reduce an impulse to inscribe, measure, or
+                                visualize with technologies in order to increase the likelihood of
+                                experimentation and collective participation</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Use</span>
+                            <span class="content">Reduce the use of natural resources and
+                                technologies (especially hardware, middleware, and peripherals) to
+                                decrease environmental effects and energy consumption</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Consumption</span>
+                            <span class="content">Reduce arguments premised on technological
+                                progress, the early adoption/implementation of technologies, and the
+                                treatment of computing as work (to create products) in order to
+                                increase deliberation, thoroughness of research, and the likelihood
+                                of informed decisions</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Obsolescence</span>
+                            <span class="content">Reduce turnover of technologies, standards, and
+                                formats to increase reuse and decrease waste/discards</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Presence</span>
+                            <span class="content">Reduce the use of laptops, desktops, and other
+                                computers in order to prototype with low-tech materials (clay,
+                                paper, pencils), decrease reliance on automation, and increase
+                                comparative studies (across digital and analog media)</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Visibility</span>
+                            <span class="content">Reduce the perceived intervention of technologies
+                                to facilitate interaction as well as the production/extraction of
+                                data from those interactions/behaviors (Internet of Things)</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Access</span>
+                            <span class="content">Reduce the use of proprietary technologies and
+                                paywalls to increase access to content, data, and/or source
+                                files</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Accessibility</span>
+                            <span class="content">Through shared guidelines and frequent user
+                                testing, reduce the use of features that are difficult to see, read,
+                                hear, translate, use, navigate, process, store, or find toward
+                                access by everyone and to also increase the overall quality and
+                                consistency of projects</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Justice</span>
+                            <span class="content">Reduce the use of technological, cultural, social,
+                                and economic barriers to increase entry, access, participation, and
+                                self-representation in computing and to also build systems/projects
+                                premised on social justice and difference, not white supremacy and
+                                settler colonialism</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Learning Curve</span>
+                            <span class="content">Reduce the experience assumed or required to
+                                participate in computing and technological work</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Negotiation</span>
+                            <span class="content">Reduce the rigidity of form, composition, and use
+                                to increase the personalization, adaptability, responsiveness,
+                                and/or robustness of technologies</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Internet</span>
+                            <span class="content">Reduce reliance on the internet for communication,
+                                exchange, and participation to account for or privilege local
+                                conditions</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Connectivity</span>
+                            <span class="content">Reduce or eliminate the default assumption that
+                                internet access is evenly distributed in order to account for
+                                material and social conditions of communications and exchange</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Surveillance</span>
+                            <span class="content">Reduce the use of sensors, computer vision,
+                                cookies, and other tracking mechanisms to increase privacy and
+                                security and to decrease harassment and hacks</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Vulnerabilities</span>
+                            <span class="content">Reduce attack vectors (e.g., cross-site scripting,
+                                SQL injections, and directory traversals) of projects to decrease
+                                likelihood of hacks and harassment</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Externals</span>
+                            <span class="content">Reduce dependency on external groups or mechanisms
+                                to produce, exchange, and circulate your own projects and
+                                content</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Automation</span>
+                            <span class="content">Reduce use of mechanisms that (magically) turn
+                                input into output in order to increase awareness of how this becomes
+                                that or how algorithms/tools make decisions</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Space</span>
+                            <span class="content">Reduce the physical space dedicated to hardware
+                                and workstations to increase the flexible use, variability, and
+                                modularity of that space</span>
+                        </p>
+                        <p>
+                            <span class="heading">Maximum Mobility</span>
+                            <span class="content">Reduce dependency on fixed technologies (e.g.,
+                                desktops plugged into walls) to increase movement, performance, and
+                                participation across events and settings</span>
+                        </p>
+                        <p>
+                            <span class="heading">Minimal Technical Language</span>
+                            <span class="content">Reduce the use of specialized language to increase
+                                participation and engagement with shared technocultural
+                                problems</span>
+                        </p>
+                    </div>
+
+                </section>
+ -->
+
+
+               
+
+                               <!--        
+                                
+                                
+                <section data-state="blur" data-background-image="img/gil-bg.png"
+                    data-background-position="top">
+                    <div style="padding: 2rem 1rem">
+                        <blockquote> I prefer to approach minimal computing around the question
+                            “What do we need?” If we do so, our orientations vis-a-vis ease of use,
+                            ease of creation, increased access and reductions in computing—and by
+                            extension, electricity—become clearer. </blockquote>
+                        <cite>Alex Gil, "The User, the Learner and the Machines We Make"</cite>
+                    </div>
+                </section>
+
+        <section>
+            <h4>How Do People Make Static Sites?</h4>
+            <ul>
+                <li class="fragment">Artistinally (writing them out by hand)</li>
+                <li class="fragment">(But don't do that)</li>
+                <li class="fragment">Exporting from something else</li>
+                <li class="fragment">Using a static site builder</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h4>Github</h4>
+            <ul>
+                <li class="fragment">Broad audience (not just programmers!)</li>
+                <li class="fragment">Free and robust version control</li>
+            </ul>
+            <div class="fragment" style="font-size: 16px; margin-top: 5rem">The library frequently has Github workshops!</div>
+        </section>
+        
+        <section>
+            <h4>Github Pages</h4>
+            <ul>
+                <li class="fragment">Free service on Github available on every repository that hosts and serves your static website (within limits)</li>
+                <li class="fragment">Well documented setup (with many tutorials available)</li>
+                <li class="fragment">Uses <em>Markdown</em> (content) and <em>YAML</em> (metadata)</li>
+            </ul>
+        </section> -->
+
+
+                <!-- 
+        <section>
+            <h3>Choosing Wisely (S. Arneil)</h3>
+            <table class="table r-fit-text">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Unwise</th>
+                        <th>Wise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> Thought put in</th>
+                        <td>Unwitting, casual</td>
+                        <td> Conscious </td>
+                    </tr>
+
+                    <tr>
+                        <th>Number</th>
+                        <td>Many, varied</td>
+                        <td> None or few</td>
+                    </tr>
+                    <tr>
+                        <th>Legal, terms issues</th>
+                        <td>Yes or commercial</td>
+                        <td> No or open source</td>
+                    </tr>
+                    <tr>
+                        <th>Own dependencies</th>
+                        <td>Yes, poor ones</td>
+                        <td> No or wise ones</td>
+                    </tr>
+                    <tr>
+                        <th>Provider</th>
+                        <td>Unreliable</td>
+                        <td>Reliable</td>
+                    </tr>
+                    <tr>
+                        <th>Documentation</th>
+                        <td>Absent, incomplete</td>
+                        <td>Thorough</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Choosing Wisely (S. Arneil)</h3>
+            <table class="r-fit-text">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Unwise</th>
+                        <th>Wise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Feature importance</th>
+                        <td>Minor</td>
+                        <td>Critical</td>
+                    </tr>
+                    <tr>
+                        <th>Replaceable</th>
+                        <td>Yes</td>
+                        <td>No or at high cost</td>
+                    </tr>
+                    <tr>
+                        <th>Effect of failure</th>
+                        <td>Major or widespread</td>
+                        <td>Minor or contained</td>
+                    </tr>
+                    <tr>
+                        <th>Time</th>
+                        <td>Indefinite</td>
+                        <td>Limited</td>
+                    </tr>
+                    <tr>
+                        <th>Supportable</th>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th>Thought put in</th>
+                        <td>Unwitting, casual</td>
+                        <td>Conscious</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> -->
+
+                <!-- <section>
+            <h3>The Process of Marking Up Texts</h3>
+            <div class="r-stack">
+                <blockquote class="fragment fade-out" data-fragment-index="0">The process is analytical, strategic, and interpretive.</blockquote>
+                
+                <blockquote class="fragment current-visible" data-fragment-index="1">It is analytical, in identifying a set of components into which the text can meaningfully be broken and whose relationship can be represented</blockquote>
+                
+                <blockquote class="fragment current-visible" data-fragment-index="2">Markup is strategic, in that text encoding is always aimed (deliberately or by default) at some intellectual or practical goal</blockquote>
+                
+                <blockquote class="fragment current-visible" data-fragment-index="3">And markup is interpretive, in that the act of encoding will always take place through a connection between an observing individual and a source object.</blockquote>
+                
+            </div>
+            <cite>Julia Flanders, Syd Bauman, and Sarah Connell. "Text Encoding." <i>Doing Digital Humanities</i>, edited by Constance Crompton, Richard Lane, and Ray Siemens. Routledge, 2016.</cite>
+        </section> -->
+
+
+
+
+            </div>
+        </div>
+        <script src="js/presentation.js" type="module"></script>
+    </body>
+</html>
